@@ -1,3 +1,5 @@
+import { connect } from "./amq/connect";
+
 const express = require("express");
 
 const app = express();
@@ -10,6 +12,8 @@ app.listen(PORT, (error: any) => {
     );
   else console.log("Error occurred, server can't start", error);
 });
+
+connect();
 
 app.get("/post-message", async (req: any, res: any) => {
   res.send("HELOBELO11a");

@@ -1,0 +1,5 @@
+export enum QUEUE {
+  CREATE_EVENT,
+  CREATE_DOCUMENT,
+  SEND_MAIL,
+}
